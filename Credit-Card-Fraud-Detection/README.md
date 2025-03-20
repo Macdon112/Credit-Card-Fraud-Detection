@@ -50,6 +50,8 @@ pip install -r requirements.txt
 
 How to run 
 jupyter notebook credit_card_fraud_detection.ipynb
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/macdon/Credit-Card-Fraud-Detection/blob/main/Notebooks/Fraud_detection_Analysis.ipynb)
  
 Run all the cells.
 check the output metrics and plots
