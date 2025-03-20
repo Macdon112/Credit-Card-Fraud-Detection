@@ -35,7 +35,7 @@ This project compares machine learning models (KNN, Random Forest, Decision Tree
    ```  
 
 ## Dataset(Synthetic Dataset)  
-[creditcard_fraud.csv](Data/creditcard_fraud.csv) (Source: [Synthetic](https://www.kaggle.com/datasets/kelvinkelue/credit-card-fraud-prediction?resource=download))  
+**https://www.kaggle.com/datasets/kelvinkelue/credit-card-fraud-prediction?resource=download**
 
 ## Tools Used  
 - Python  
