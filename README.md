@@ -24,15 +24,7 @@ This project compares machine learning models (KNN, Random Forest, Decision Tree
  
  
 ## How to Run  
-
-1. Install dependencies:  
-   ```bash  
-   pip install -r requirements.txt  
-   ```  
-2. Open the notebook:  
-   ```bash  
-   jupyter notebook credit_card_fraud_detection.ipynb 
-   ```  
+https://github.com/Macdon112/Credit-Card-Fraud-Detection/blob/main/Credit-Card-Fraud-Detection/Notebooks/Fraud%20detection%20Analysis.ipynb
 
 ## Dataset(Synthetic Dataset)  
 **https://www.kaggle.com/datasets/kelvinkelue/credit-card-fraud-prediction?resource=download**
