@@ -49,9 +49,7 @@ To install the required libraries, run:
 pip install -r requirements.txt
 
 How to run 
-jupyter notebook credit_card_fraud_detection.ipynb
-
-
+https://github.com/Macdon112/Credit-Card-Fraud-Detection/blob/main/Credit-Card-Fraud-Detection/Notebooks/Fraud%20detection%20Analysis.ipynb
  
 Run all the cells.
 check the output metrics and plots
