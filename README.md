@@ -1,7 +1,11 @@
 # Credit Card Fraud Detection with Machine Learning 
 
+![image](https://github.com/user-attachments/assets/85657d6c-ad59-4d46-9f0d-9010a18eaf6d)
+
 ## Project Overview  
-This project compares machine learning models (KNN, Random Forest, Decision Tree) to detect fraudulent credit card transactions using SMOTE and stratified cross-validation.  
+The growing use of credit cards  across the globe has led to a surge in fraudulent transactions, necessitating robust fraud detection mechanisms. Employing machine learning, presents a viable solution. This research evaluates the performance of various machine learning classifiers, Random Forest, Decision Tree and  KNNearest Neighbours (KNN) and data balancing techniques SMOTE and Stratified K-Fold for credit card fraud detection using a highly imbalanced dataset. The experimental results that Random Forest achieved the best metric performance. This research reveals the importance of leveraging machine learning and appropriate data balancing techniques for optimal fraud detection in credit card transactions. This contribution is pivotal, enriching the knowledge base and providing insights into the ongoing battle against credit card fraud
+
+![image](https://github.com/user-attachments/assets/418379cd-3d62-4a32-9fcd-146ad9cbfbf1)
 
 
 ## Features and Key Steps  
