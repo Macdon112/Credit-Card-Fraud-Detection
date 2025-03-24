@@ -34,6 +34,32 @@ https://github.com/Macdon112/Credit-Card-Fraud-Detection/blob/main/Credit-Card-F
 ## Dataset(Synthetic Dataset)  
 **https://www.kaggle.com/datasets/kelvinkelue/credit-card-fraud-prediction?resource=download**
 
+Data Collection 
+The dataset, named ‘fraud test’, is a synthetic dataset hence not anonymised sourced from Kaggle(Kaggle) It comprises 555,719 instances, each characterised by 22 attributes, encompassing both categorical and numerical types, and contains no null values. The attributes include:
+ Trans_date_trans_time: Date and time of the transaction. 
+ Cc_num: Customer number. 
+ Merchant: Merchant involved in the transaction. 
+ Category: Type of transaction (e.g., personal, kids care). 
+ Amt: Transaction amount. 
+ First: First name of the cardholder. 
+ Last: Last name of the cardholder. 
+ Gender: Gender of the cardholder. 
+ Street: Street address of the cardholder. 
+ City: City of the cardholder. 
+ State: State of residence of the cardholder. 
+ Zip: Zip code of the cardholder’s residence. 
+ Lat: Latitude of the transaction location. 
+ Long: Longitude of the transaction location. 
+ City_pop: Population of the cardholder’s city. 
+ Job: Job title of the cardholder. 
+ Dob: Date of birth of the cardholder. 
+ Trans_num: Unique transaction ID. 
+ Unix_time: Timestamp of the transaction. 
+ Merch_lat: Latitude of the merchant’s location. 
+ Merch_long: Longitude of the merchant’s location. 
+ Is_fraud: Indicates fraud status with 1 for fraud and 0 for non-fraud. This is the target 
+variable for classification.
+
 ## Tools Used  
 - Python  
 - Scikit-learn, Imbalanced-learn  
