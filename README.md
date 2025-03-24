@@ -36,29 +36,28 @@ https://github.com/Macdon112/Credit-Card-Fraud-Detection/blob/main/Credit-Card-F
 
 Data Collection 
 The dataset, named ‘fraud test’, is a synthetic dataset hence not anonymised sourced from Kaggle(Kaggle) It comprises 555,719 instances, each characterised by 22 attributes, encompassing both categorical and numerical types, and contains no null values. The attributes include:
- Trans_date_trans_time: Date and time of the transaction. 
- Cc_num: Customer number. 
- Merchant: Merchant involved in the transaction. 
- Category: Type of transaction (e.g., personal, kids care). 
- Amt: Transaction amount. 
- First: First name of the cardholder. 
- Last: Last name of the cardholder. 
- Gender: Gender of the cardholder. 
- Street: Street address of the cardholder. 
- City: City of the cardholder. 
- State: State of residence of the cardholder. 
- Zip: Zip code of the cardholder’s residence. 
- Lat: Latitude of the transaction location. 
- Long: Longitude of the transaction location. 
- City_pop: Population of the cardholder’s city. 
- Job: Job title of the cardholder. 
- Dob: Date of birth of the cardholder. 
- Trans_num: Unique transaction ID. 
- Unix_time: Timestamp of the transaction. 
- Merch_lat: Latitude of the merchant’s location. 
- Merch_long: Longitude of the merchant’s location. 
- Is_fraud: Indicates fraud status with 1 for fraud and 0 for non-fraud. This is the target 
-variable for classification.
+**1. Trans_date_trans_time: Date and time of the transaction.** 
+**2. Cc_num: Customer number.** 
+**3. Merchant: Merchant involved in the transaction.** 
+**4. Category: Type of transaction (e.g., personal, kids care).** 
+**5. Amt: Transaction amount.** 
+**6. First: First name of the cardholder.** 
+**7. Last: Last name of the cardholder.** 
+**8. Gender: Gender of the cardholder.** 
+**9. Street: Street address of the cardholder.** 
+**10. City: City of the cardholder.** 
+**11. State: State of residence of the cardholder.** 
+**12. Zip: Zip code of the cardholder’s residence.** 
+**13. Lat: Latitude of the transaction location.** 
+**14. Long: Longitude of the transaction location.** 
+**15. City_pop: Population of the cardholder’s city.** 
+**16. Job: Job title of the cardholder.** 
+**17. Dob: Date of birth of the cardholder.** 
+**18. Trans_num: Unique transaction ID.** 
+**19. Unix_time: Timestamp of the transaction** 
+**20. Merch_lat: Latitude of the merchant’s location.** 
+**21. Merch_long: Longitude of the merchant’s location.** 
+**22. Is_fraud: Indicates fraud status with 1 for fraud and 0 for non-fraud. This is the target variable for classification.**
 
 ## Tools Used  
 - Python  
