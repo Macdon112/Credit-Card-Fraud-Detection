@@ -156,7 +156,7 @@ GitHub: https://github.com/Macdon112
 
 _This section presents the business-oriented analysis, project impact, deployment recommendations, and service offering.
 
-📄 [Click here to read the full summary](./Fraud-Detection-Summary.md)
+ [Click here to read the full summary](./Fraud-Detection-Summary.md)
 
 
 
