@@ -1,11 +1,13 @@
 # Credit Card Fraud Detection Using Machine Learning
 
-> A complete pipeline for detecting fraudulent credit card transactions with state-of-the-art machine learning models and robust evaluation strategies.
+> A complete pipeline for detecting fraudulent credit card transactions with machine learning models and robust evaluation strategies.
 
 ## Project Objective
 
 The primary aim of this project is to identify and prevent credit card fraud by building and evaluating machine learning models that can distinguish fraudulent transactions from legitimate ones. Given the **highly imbalanced** nature of fraud detection tasks, the project incorporates advanced techniques such as **SMOTE** oversampling and **stratified cross-validation** to ensure model robustness.
 
+## Project Overview  
+This project compares machine learning models (KNN, Random Forest, Decision Tree) to detect fraudulent credit card transactions using SMOTE and stratified cross-validation.  
 
 
 ## Dataset
@@ -110,17 +112,23 @@ fraud_test.csv
 README.md
 
 
+## Dataset(Synthetic Dataset)  
+**https://www.kaggle.com/datasets/kelvinkelue/credit-card-fraud-prediction?resource=download** 
+
+
+How to run 
+https://github.com/Macdon112/Credit-Card-Fraud-Detection/blob/main/Credit-Card-Fraud-Detection/Notebooks/Fraud%20detection%20Analysis.ipynb
 Access the Full Report
+
 
 ## Download the Full Report
 [Click here to view or download the report](./Credit-Card-Fraud-detection.pdf)
-
 
 This detailed notebook includes every visual, EDA, model, confusion matrix, performance metrics, and plots.
 
 
 
-## Author & Skills Demonstrated
+## Skills Demonstrated & Author 
 
 This project showcases:
 
@@ -131,6 +139,9 @@ Expertise in building interpretable, replicable, and high-performing fraud detec
 Reach out for data science consulting, fraud detection modelling, or machine learning projects.
 
 
+Author.
+Nnamdi Okeke 
+GitHub: https://github.com/Macdon112
 
 ## Future Work
 
@@ -141,4 +152,16 @@ Reach out for data science consulting, fraud detection modelling, or machine lea
 
 
 
-> “Credit card fraud detection isn't just about machine learning—it's about preserving trust in the digital economy. With this project, we take a confident step toward smarter, data-driven security.” — *Nnamdi Okeke*
+> “Credit card fraud detection isn't just about machine learning—it's about preserving trust in the digital economy. With this project, we take a confident step toward smarter, data-driven security.” — **Nnamdi Okeke**
+
+
+
+
+
+
+
+
+
+
+
+
