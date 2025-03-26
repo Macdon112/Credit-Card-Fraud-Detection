@@ -14,7 +14,7 @@ Source: `fraud_test.csv` containing **555,719** credit card transactions.
 Target Variable: `is_fraud` (0 = non-fraud, 1 = fraud)
 Fraudulent records: ~0.38% of total data (2145 fraud cases)
 
----
+
 
 ## Exploratory Data Analysis (EDA)
 
@@ -112,7 +112,7 @@ README.md
 
 Access the Full Report
 
-Download PDF Report 
+Download PDF Report Credit-Card-Fraud-detection.pdf
 
 This detailed notebook includes every visual, EDA, model, confusion matrix, performance metrics, and plots.
 
