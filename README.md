@@ -4,7 +4,7 @@
 
 ## Project Objective
 
-The primary aim of this project is to **identify and prevent credit card fraud** by building and evaluating machine learning models that can distinguish fraudulent transactions from legitimate ones. Given the **highly imbalanced** nature of fraud detection tasks, the project incorporates advanced techniques such as **SMOTE** oversampling and **stratified cross-validation** to ensure model robustness.
+The primary aim of this project is to identify and prevent credit card fraud by building and evaluating machine learning models that can distinguish fraudulent transactions from legitimate ones. Given the **highly imbalanced** nature of fraud detection tasks, the project incorporates advanced techniques such as **SMOTE** oversampling and **stratified cross-validation** to ensure model robustness.
 
 
 
@@ -60,7 +60,7 @@ Three core models were evaluated using **Stratified K-Fold Cross-Validation** (n
 - ROC AUC: **1.00**
 - Precision: **0.99**
 - Recall: **0.99**
-- Feature Importance revealed key predictors in fraud behavior.
+- Feature Importance revealed key predictors in fraud behaviour.
 
 ### Decision Tree Classifier
 - Accuracy: **1.00**
@@ -103,31 +103,28 @@ Implemented advanced pipeline structures using **imbalanced-learn Pipelines**:
 
 ## File Structure
 
+Credit-Card-Fraud-Detection
+Credit-Card-Fraud-Detection.ipynb
+Credit-Card-Fraud-Detection.pdf  ← Download full notebook report
+fraud_test.csv
+README.md
 
-📦 Credit-Card-Fraud-Detection
- ┣ 📄 Credit-Card-Fraud-Detection.ipynb
- ┣ 📄 Credit-Card-Fraud-Detection.pdf  ← Download full notebook report
- ┣ 📄 fraud_test.csv
- ┣ 📄 README.md
-```
-
--
 
 Access the Full Report
 
-📎 [Download PDF Report](./Credit-Card-Fraud-Detection.pdf)
+Download PDF Report 
 
 This detailed notebook includes every visual, EDA, model, confusion matrix, performance metrics, and plots.
 
----
+
 
 ## Author & Skills Demonstrated
 
 This project showcases:
 
-- Proficiency in **Python**, **pandas**, **seaborn**, **scikit-learn**, and **imbalanced-learn**.
-- Mastery of **feature engineering**, **class imbalance handling**, and **model evaluation**.
-- Expertise in building **interpretable**, **replicable**, and **high-performing** fraud detection systems.
+Proficiency in Python, pandas, seaborn, scikit-learn, and imbalanced-learn.
+Mastery of feature engineering, class imbalance handling, and model evaluation.
+Expertise in building interpretable, replicable, and high-performing fraud detection systems.
 
 Reach out for data science consulting, fraud detection modelling, or machine learning projects.
 
@@ -136,8 +133,8 @@ Reach out for data science consulting, fraud detection modelling, or machine lea
 ## Future Work
 
 - Incorporate **deep learning methods** (e.g., LSTM, autoencoders)
-- Deploy the model as a **real-time fraud detection API**
-- Integrate **model explainability tools** like SHAP and LIME
+- Deploy the model as a real-time fraud detection API
+- Integrate model explainability tools like SHAP and LIME
 - Continuous learning pipeline to adapt to new fraud patterns
 
 
