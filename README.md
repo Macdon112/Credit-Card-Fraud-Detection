@@ -12,7 +12,7 @@ This project compares machine learning models (KNN, Random Forest, Decision Tree
 
 ## Dataset
 
-Source: `fraud_test.csv` containing **555,719** credit card transactions.
+Source: `fraud test.csv` containing **555,719** credit card transactions.
 Target Variable: `is_fraud` (0 = non-fraud, 1 = fraud)
 Fraudulent records: ~0.38% of total data (2145 fraud cases)
 
