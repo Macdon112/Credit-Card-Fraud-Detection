@@ -1,89 +1,145 @@
-# Credit Card Fraud Detection with Machine Learning 
+# Credit Card Fraud Detection Using Machine Learning
 
-![image](https://github.com/user-attachments/assets/85657d6c-ad59-4d46-9f0d-9010a18eaf6d)
+> A complete pipeline for detecting fraudulent credit card transactions with state-of-the-art machine learning models and robust evaluation strategies.
 
-## Project Overview  
-The growing use of credit cards  across the globe has led to a surge in fraudulent transactions, necessitating robust fraud detection mechanisms. Employing machine learning, presents a viable solution. This research evaluates the performance of various machine learning classifiers, Random Forest, Decision Tree and  KNNearest Neighbours (KNN) and data balancing techniques SMOTE and Stratified K-Fold for credit card fraud detection using a highly imbalanced dataset. The experimental results that Random Forest achieved the best metric performance. This research reveals the importance of leveraging machine learning and appropriate data-balancing techniques for optimal fraud detection in credit card transactions. This contribution is pivotal, enriching the knowledge base and providing insights into the ongoing battle against credit card fraud
+## Project Objective
 
-![image](https://github.com/user-attachments/assets/418379cd-3d62-4a32-9fcd-146ad9cbfbf1)
-
-Credit card fraud poses a growing threat to the financial service industry. A report from Statista shows that global losses due to credit card fraud have risen by 10%between 2020 and 2021 (Statista, 2023). This alarming trend translates into substantial losses for credit card issuers and merchant acquirers, estimating that both entities will lose over USD 30 billion in 2022 alone. E-commerce has been a critical factor in this surge in credit card fraud. As(Jain et al., 2019) Point out, the increasing popularity of online shopping creates more opportunities for fraudsters. These criminals are employing ever-more sophisticated tactics to gain access to digital payment information, and credit card fraud will constitute a staggering 73% of all card payment fraud losses within a year.
-
-## Features and Key Steps  
-1. **Data Cleaning**: Removed duplicates and irrelevant columns.
-2. **Exploratory Data Analysis (EDA)
-2. **Feature Engineering**: Created transaction time features.  
-3. **Model Training with cross-validation**: Evaluated models using ROC-AUC and F1-score
-4. **Performance Metrics (ROC-AUC, F1 Score, Precision, Recall)
-  
-
-## Results   
-
-### Model Comparison  
-| Model          | ROC-AUC | Recall |  
-|----------------|---------|--------|  
-| Random Forest  | 0.98    | 0.89   |  
-| Decision Tree  | 0.94    | 0.85   |  
-| KNN            | 0.91    | 0.82   |  
-
- 
- 
-## How to Run  
-https://github.com/Macdon112/Credit-Card-Fraud-Detection/blob/main/Credit-Card-Fraud-Detection/Notebooks/Fraud%20detection%20Analysis.ipynb
-
-## Dataset(Synthetic Dataset)  
-**https://www.kaggle.com/datasets/kelvinkelue/credit-card-fraud-prediction?resource=download**
-
-Data Collection 
-The dataset, named ‘fraud test’, is a synthetic dataset hence not anonymised sourced from Kaggle(Kaggle) It comprises 555,719 instances, each characterised by 22 attributes, encompassing both categorical and numerical types, and contains no null values. The attributes include:
-**1. Trans_date_trans_time: Date and time of the transaction.** 
-**2. Cc_num: Customer number.** 
-**3. Merchant: Merchant involved in the transaction.** 
-**4. Category: Type of transaction (e.g., personal, kids care).** 
-**5. Amt: Transaction amount.** 
-**6. First: First name of the cardholder.** 
-**7. Last: Last name of the cardholder.** 
-**8. Gender: Gender of the cardholder.** 
-**9. Street: Street address of the cardholder.** 
-**10. City: City of the cardholder.** 
-**11. State: State of residence of the cardholder.** 
-**12. Zip: Zip code of the cardholder’s residence.** 
-**13. Lat: Latitude of the transaction location.** 
-**14. Long: Longitude of the transaction location.** 
-**15. City_pop: Population of the cardholder’s city.** 
-**16. Job: Job title of the cardholder.** 
-**17. Dob: Date of birth of the cardholder.** 
-**18. Trans_num: Unique transaction ID.** 
-**19. Unix_time: Timestamp of the transaction** 
-**20. Merch_lat: Latitude of the merchant’s location.** 
-**21. Merch_long: Longitude of the merchant’s location.** 
-**22. Is_fraud: Indicates fraud status with 1 for fraud and 0 for non-fraud. This is the target variable for classification.**
-
-## Tools Used  
-- Python  
-- Scikit-learn, Imbalanced-learn  
-- Matplotlib/Seaborn  
+The primary aim of this project is to **identify and prevent credit card fraud** by building and evaluating machine learning models that can distinguish fraudulent transactions from legitimate ones. Given the **highly imbalanced** nature of fraud detection tasks, the project incorporates advanced techniques such as **SMOTE** oversampling and **stratified cross-validation** to ensure model robustness.
 
 
-## Installation
-To install the required libraries, run:
-```bash
-pip install -r requirements.txt
 
-How to run 
-jupyter notebook credit_card_fraud_detection.ipynb
+## Dataset
+
+Source: `fraud_test.csv` containing **555,719** credit card transactions.
+Target Variable: `is_fraud` (0 = non-fraud, 1 = fraud)
+Fraudulent records: ~0.38% of total data (2145 fraud cases)
+
+---
+
+## Exploratory Data Analysis (EDA)
+
+Comprehensive data profiling and visualisation included:
+
+**Fraud Distribution**: Visualised imbalance (0.38% fraud).
+**Gender vs Fraud**: Compared fraud rates across genders.
+**Category vs Fraud**: Identified risky transaction categories.
+**Time-based Patterns**: Analyzed hourly fraud likelihood.
+**Amount Trends**: High-value transactions show greater fraud correlation.
+**Outlier Detection**: Boxplots for `amt`, `lat`, `long`, and `city_pop`.
 
 
- 
-Run all the cells.
-check the output metrics and plots
 
-Results
-1. Random forest performs best with the highest recall score
-2. Fraudulent transactions are highly imbalanced, requiring oversampling
+## Feature Engineering
 
-Author.
-Nnamdi Okeke 
-GitHub: https://github.com/Macdon112
+Several engineered features were introduced to enrich the predictive power of the model:
 
-License
+1. **Age at Transaction** (from `dob` and `trans_date_trans_time`)
+2. **Time Since Last Transaction**
+3. **Relative Transaction Amount** (vs average per user)
+4. **Cumulative Transaction Amount**
+5. **WOE Encoding** for categorical features: `merchant`, `job`, `category`, `lat`
+
+
+
+## Data Preprocessing
+
+Dropped redundant fields like `Unnamed: 0`, `cc_num`, `dob`, etc.
+Applied **standard scaling** to normalise features.
+Balanced the data using **SMOTE** to address class imbalance.
+Final feature set passed rigorous correlation analysis.
+
+
+
+## Machine Learning Models & Evaluation
+
+Three core models were evaluated using **Stratified K-Fold Cross-Validation** (n=10):
+
+### Random Forest Classifier
+- Accuracy: **1.00**
+- F1 Score: **1.00**
+- ROC AUC: **1.00**
+- Precision: **0.99**
+- Recall: **0.99**
+- Feature Importance revealed key predictors in fraud behavior.
+
+### Decision Tree Classifier
+- Accuracy: **1.00**
+- F1 Score: **1.00**
+- ROC AUC: **1.00**
+- Precision: **0.83**
+- Recall: **0.67**
+
+### K-Nearest Neighbors (KNN)
+- Accuracy: **0.99**
+- F1 Score: **0.99**
+- ROC AUC: **1.00**
+- Precision: **0.92**
+- Recall: **0.86**
+
+
+
+## Pipeline Framework with Dynamic Synthetic Oversampling
+
+Implemented advanced pipeline structures using **imbalanced-learn Pipelines**:
+
+- SMOTE applied within each fold to prevent data leakage.
+- Visualised **ROC Curves**, **Precision-Recall Curves**, and **Confusion Matrices**.
+- Comparative analysis confirmed **Random Forest** as the most consistent performer.
+
+
+
+## Results Summary
+
+| Model           | Accuracy | F1 Score | ROC AUC | Precision | Recall |
+|----------------|----------|----------|---------|-----------|--------|
+| Random Forest  | 1.00     | 1.00     | 1.00    | 0.99      | 0.99   |
+| Decision Tree  | 1.00     | 1.00     | 1.00    | 0.83      | 0.67   |
+| KNN            | 0.99     | 0.99     | 1.00    | 0.92      | 0.86   |
+| RF Pipeline    | 0.9979   | 0.7346   | 0.9833  | 0.7136    | 0.7582 |
+| DT Pipeline    | 0.9968   | 0.6368   | 0.8646  | 0.5646    | 0.7313 |
+| KNN Pipeline   | 0.9841   | 0.2449   | 0.8606  | 0.1500    | 0.6685 |
+
+
+
+## File Structure
+
+
+📦 Credit-Card-Fraud-Detection
+ ┣ 📄 Credit-Card-Fraud-Detection.ipynb
+ ┣ 📄 Credit-Card-Fraud-Detection.pdf  ← Download full notebook report
+ ┣ 📄 fraud_test.csv
+ ┣ 📄 README.md
+```
+
+-
+
+Access the Full Report
+
+📎 [Download PDF Report](./Credit-Card-Fraud-Detection.pdf)
+
+This detailed notebook includes every visual, EDA, model, confusion matrix, performance metrics, and plots.
+
+---
+
+## Author & Skills Demonstrated
+
+This project showcases:
+
+- Proficiency in **Python**, **pandas**, **seaborn**, **scikit-learn**, and **imbalanced-learn**.
+- Mastery of **feature engineering**, **class imbalance handling**, and **model evaluation**.
+- Expertise in building **interpretable**, **replicable**, and **high-performing** fraud detection systems.
+
+Reach out for data science consulting, fraud detection modelling, or machine learning projects.
+
+
+
+## Future Work
+
+- Incorporate **deep learning methods** (e.g., LSTM, autoencoders)
+- Deploy the model as a **real-time fraud detection API**
+- Integrate **model explainability tools** like SHAP and LIME
+- Continuous learning pipeline to adapt to new fraud patterns
+
+
+
+> “Credit card fraud detection isn't just about machine learning—it's about preserving trust in the digital economy. With this project, we take a confident step toward smarter, data-driven security.” — *Nnamdi Okeke*
