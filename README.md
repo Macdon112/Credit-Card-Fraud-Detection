@@ -113,7 +113,7 @@ README.md
 Access the Full Report
 
 ## Download the Full Report
-[Click here to view or download the report](./Credit-Card-Fraud-Detection.pdf)
+[Click here to view or download the report](./Credit-Card-Fraud-detection.pdf)
 
 
 This detailed notebook includes every visual, EDA, model, confusion matrix, performance metrics, and plots.
