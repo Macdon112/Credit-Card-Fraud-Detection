@@ -48,7 +48,7 @@ Several engineered features were introduced to enrich the predictive power of th
 Dropped redundant fields like `Unnamed: 0`, `cc_num`, `dob`, etc.
 Applied **standard scaling** to normalise features.
 Balanced the data using **SMOTE** to address class imbalance.
-Final feature set passed rigorous correlation analysis.
+The final feature set passed rigorous correlation analysis.
 
 
 
@@ -149,6 +149,14 @@ GitHub: https://github.com/Macdon112
 - Deploy the model as a real-time fraud detection API
 - Integrate model explainability tools like SHAP and LIME
 - Continuous learning pipeline to adapt to new fraud patterns
+
+---
+
+## Business Report & Outcome Summary
+
+_This section presents the business-oriented analysis, project impact, deployment recommendations, and service offering.
+
+📄 [Click here to read the full summary](./Fraud-Detection-Summary.md)
 
 
 
