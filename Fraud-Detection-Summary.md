@@ -14,6 +14,8 @@ This project addresses a critical problem in digital finance: the rising threat 
 •	Fraud cases: ~2,145 (Approx. 0.38% of data)
 •	Imbalance Handling: SMOTE (Synthetic Minority Oversampling Technique)
 
+> kaggle Dataset: https://www.kaggle.com/datasets/kelvinkelue/credit-card-fraud-prediction?resource=download
+
 **Methodology Snapshot**
 --EDA: Outlier analysis, skew detection, correlation mapping
 --Feature Engineering:
