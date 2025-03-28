@@ -4,7 +4,7 @@
 
 ## Project Objective
 
-The primary aim of this project is to identify and prevent credit card fraud by building and evaluating machine learning models that can distinguish fraudulent transactions from legitimate ones. Given the **highly imbalanced** nature of fraud detection tasks, the project incorporates advanced techniques such as **SMOTE** oversampling and **stratified cross-validation** to ensure model robustness.
+The primary aim of this project is to identify and prevent credit card fraud by building and evaluating machine learning models that can distinguish fraudulent transactions from legitimate ones. Given the highly imbalanced nature of fraud detection tasks, the project incorporates advanced techniques such as **SMOTE** oversampling and **stratified cross-validation** to ensure model robustness.
 
 ## Project Overview  
 This project compares machine learning models (KNN, Random Forest, Decision Tree) to detect fraudulent credit card transactions using SMOTE and stratified cross-validation.  
@@ -54,7 +54,7 @@ The final feature set passed rigorous correlation analysis.
 
 ## Machine Learning Models & Evaluation
 
-Three core models were evaluated using **Stratified K-Fold Cross-Validation** (n=10):
+Three core models were evaluated using Stratified K-Fold Cross-Validation (n=10):
 
 ### Random Forest Classifier
 - Accuracy: **1.00**
@@ -145,7 +145,7 @@ GitHub: https://github.com/Macdon112
 
 ## Future Work
 
-- Incorporate **deep learning methods** (e.g., LSTM, autoencoders)
+- Incorporate deep learning methods (e.g., LSTM, autoencoders)
 - Deploy the model as a real-time fraud detection API
 - Integrate model explainability tools like SHAP and LIME
 - Continuous learning pipeline to adapt to new fraud patterns
